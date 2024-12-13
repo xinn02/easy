@@ -1,0 +1,216 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+
+header{
+    background-color: rgb(252, 204, 222);
+    height: 80px ;
+    width: 100% ;
+}
+
+h1{
+    color: rgb(255, 255, 255) ;
+    position: absolute ;
+    left: 120pt ;
+    top:0pt ;
+    line-height: 80pt;
+    background-image: url(image/Logo.svg);
+    background-size: cover ;
+    background-repeat : no-repeat ;
+    background-position: center ;
+    width: 210px ;
+    text-indent: -999999px ;
+}
+
+
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li{
+    display: inline;
+    margin-right: 4vw;
+} 
+
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+
+header a :hover{
+    color: rgb(231, 209, 12);
+    text-decoration: none;
+}
+
+
+.news{
+    background-color: rgb(87, 202, 255);
+    color: rgb(164, 219, 255);
+    height: 85vh;
+    background-image: url(image/banner.png);
+    background-repeat :no-repeat;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news h2{
+    font-size: 60px ;
+}
+
+.news p{
+    color: rgb(209, 236, 248);
+    font-size: 18px ;
+    margin: 25px 0 ;
+}
+
+.news a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid  #c9c8c8;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.slogn{
+    background-color: lavenderblush;
+    color: rgb(0, 0, 0);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.shop{
+    display: flex;
+}
+
+.shop img{
+    width: 50%;
+}
+
+.info{
+    width: 50%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.info p{
+    align-items: center;
+    line-height: 2em;
+}
+
+.product{
+    display: flex;
+    background-color: lavenderblush;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 80px;
+}
+
+.product div{
+    width: 300px;
+    text-align: center;
+}
+
+.product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.product p{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu{
+    display: none;
+}
+
+/* 響應式網頁 */
+@media screen and (max-width:768px) {
+    header ul{
+        display:none;
+    }
+    header h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .news h2{
+        font-size: 30px ;
+    }
+
+    .menu{
+        display: block;
+        background-color:transparent;
+        color: white;
+        font-size:35px;
+        position:absolute;
+        top:15px;
+        left:20px;
+        border:none;
+        cursor: pointer;
+    }
+
+    .shop{
+        flex-direction: column;
+    }
+
+    .shop img{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+
+    .product{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .product div{
+        margin-bottom: 30px;
+    }
+
+
+}
+    
